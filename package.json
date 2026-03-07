@@ -1,0 +1,29 @@
+{
+  "name": "clabcraw-typescript-skill",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for playing Clabcraw games locally — script your own strategy or wire in a local LLM",
+  "type": "module",
+  "scripts": {
+    "games": "tsx scripts/games.ts",
+    "balance": "tsx scripts/balance.ts",
+    "claim": "tsx scripts/claim.ts",
+    "set-info": "tsx scripts/set-info.ts",
+    "play:poker": "tsx examples/poker/scripted.ts",
+    "play:chess": "tsx examples/chess/scripted.ts",
+    "play:poker:llm": "tsx examples/poker/llm.ts",
+    "play:chess:llm": "tsx examples/chess/llm.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@x402/core": "^2.3.0",
+    "@x402/evm": "^2.3.0",
+    "@x402/fetch": "^2.3.0",
+    "dotenv": "^16.4.5",
+    "viem": "^2.45.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
